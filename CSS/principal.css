@@ -130,6 +130,20 @@ nav a {
 .card h3 { margin: 10px 0; }
 
 
+input {
+  padding: 10px;
+  font-size: 16px;
+  margin-bottom: 20px;
+  border: 2px solid green;
+  border-radius: 8px;
+  outline: none;
+  transition: border 0.3s ease;
+}
+
+input:placeholder-shown{
+  border:solid 2px red;
+}
+
 .content {
   padding: 20px;
   animation: fadeIn 1.5s ease;
