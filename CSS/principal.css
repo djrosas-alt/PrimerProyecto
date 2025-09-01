@@ -1,13 +1,15 @@
 body {
   font-family: Arial;
   
-  border: 10px solid transparent;
+  border: 0px solid transparent;
   padding: 15px;
   margin: 0;
   background-color: #f4f4f4;
 }
 
 header {
+  position: sticky;
+  top: 0px;
   background-color: #387cca;
   color: white;
   padding: 20px;
@@ -86,7 +88,7 @@ nav a {
 
 .hero {
   padding: 60px 20px;
-  background: url("imagenes/habitat.jpg") center;
+  background: url("../imagenes/habitat.jpg") center;
   color: white;
   text-shadow: 1px 1px 4px black;
   animation: fadeIn 2s ease;
@@ -129,7 +131,22 @@ nav a {
 }
 .card h3 { margin: 10px 0; }
 
+.leonC {
+  width: 80px ;
+  height: 80px;
+}
+.wrapper {
+  display: grid;
+  grid-auto-flow: column;
+  grid-auto-columns: 16rem;
+  animation: animate 10s linear infinite;
+}
 
+@keyframes animate{
+  to{
+    translate: calc(-4 *16rem);
+  }
+}
 input {
   padding: 10px;
   font-size: 16px;
@@ -140,34 +157,9 @@ input {
   transition: border 0.3s ease;
 }
 
-input:placeholder-shown{
-  border:solid 2px red;
+input:placeholder-shown {
+  border:solid 2px rgb(177, 20, 20);
 }
-
-.content {
-  padding: 20px;
-  animation: fadeIn 1.5s ease;
-}
-.content form {
-  display: flex;
-  flex-direction: column;
-  gap: 10px;
-  max-width: 400px;
-  margin: auto;
-}
-.content input, .content textarea {
-  padding: 10px;
-  border: 1px solid #ccc;
-  border-radius: 8px;
-}
-.content button {
-  padding: 10px;
-  border: none;
-  border-radius: 20px;
-  background: #ffbb33;
-  cursor: pointer;
-}
-.content button:hover { background: #ff9900; }
 
 
 .footer {
