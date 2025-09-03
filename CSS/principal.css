@@ -58,8 +58,6 @@ nav a {
   flex-wrap: wrap;
   margin: 0;
   background-color: beige;
-  
-
 }
 
 
@@ -178,13 +176,6 @@ input:placeholder-shown {
   cursor: pointer;
 }
 
-.footer {
-  background: #ffbb33;
-  padding: 15px;
-  margin-top: 20px;
-}
-
-
 @keyframes fadeIn {
   from { opacity: 0; }
   to { opacity: 1; }
@@ -272,17 +263,17 @@ input:placeholder-shown {
 }
 
 .btn.success {
-  background: #04AA6D;
+  background: #eedc1a;
   color: white;
 }
 
 .btn.info {
-  background: #0275d8;
+  background: #b69926;
   color: white;
 }
 
 .btn.primary {
-  background: #f39c12;
+  background: #896429;
   color: white;
 }
 
@@ -291,4 +282,45 @@ input:placeholder-shown {
   transform: translateY(-3px);
   box-shadow: 0 6px 16px rgba(0,0,0,0.15);
   opacity: 0.9;
+}
+
+.contactoparrafo {
+  text-align: justify;
+}
+
+.leonfinal {
+  width: 350px;
+  height: 250px;
+  border-radius: 40px;
+}
+
+footer {
+  background: #c99d66; 
+  color: white;
+  text-align: center;
+  padding: 20px;
+  margin-top: 40px;
+}
+
+.footer-content p {
+  margin: 5px 0;
+  font-size: 1rem;
+}
+
+.footer-content a {
+  color: white;
+  text-decoration: none;
+  margin: 0 10px;
+  font-weight: bold;
+  transition: color 0.3s ease;
+}
+
+.footer-content a:hover {
+  color: #ffeb99; 
+}
+
+.copy {
+  margin-top: 15px;
+  font-size: 0.9rem;
+  opacity: 0.8;
 }
